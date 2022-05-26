@@ -12,6 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('soo',function(){
+   return view('admin.welcomeadmin',['name'=>'Mahmoud']);
+});
+
+
 Route::prefix('number')->group(function(){
    Route::get('one',function(){
       return "number one";
