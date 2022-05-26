@@ -12,6 +12,33 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::prefix('number')->group(function(){
+   Route::get('one',function(){
+      return "number one";
+   });
+   Route::get('tow',function(){
+      return "number tow";
+   });
+   Route::get('tree',function(){
+      return "number tree";
+   });
+});
+
+
+Route::get('num/{num}',function($num){
+   return "number id is :".$num ;
+});
+
+
+Route::redirect("Loginfacebook","https://www.facebook.com/profile.php?id=100030371855718");
+
+
+Route::get('login', 'App\Http\Controllers\Controller@login');
+
+
+Route::get('one',function(){
+   return 'Mahmoud suliman Faqawi';
+});
 
 
 Route::get('/', function () {

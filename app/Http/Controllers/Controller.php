@@ -12,6 +12,6 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function login(){
-        return 'login Controller Route';
+        return 'Mahmoud FQ ';
     }
 }
