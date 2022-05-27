@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('app',function(){
+      return view('site.app');
+});
+Route::get('table',function(){
+   return view('site.table');
+});
 Route::get('soo',function(){
    return view('admin.welcomeadmin',['name'=>'Mahmoud']);
 });
